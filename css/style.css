@@ -1,0 +1,126 @@
+/* width */
+::-webkit-scrollbar {
+    width: 7px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: fuchsia; 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: fuchsia; 
+  }
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper{
+    width: 100vw;
+    height: 100vh;
+    background-color: dodgerblue;
+    display: flex;
+     justify-content: center;
+     align-items: center;
+}
+
+body{
+    font-family: 'Lato', sans-serif;
+}
+
+.contact_manager{
+     width: 350px;
+     height: 550px;
+     background-color: floralwhite;
+     border-radius: 5px;
+     box-shadow: 0px 0px 15px 2px rgba(0,0,0,0.2);
+}
+
+.contact_logo{
+    color: fuchsia;
+}
+
+.contact_header{
+    padding: 20px;
+    text-align: center;
+}
+
+.color-primary{
+    color: fuchsia;
+}
+.contact_heading{
+    color: fuchsia;
+    letter-spacing: 4px;
+}
+.contact_form{
+    padding: 0 20px;
+}
+.contact_form input{
+     display: block;
+     width: 100%;
+     padding: 15px 20px;
+     margin-bottom: 15px;
+     background-color: dodgerblue;
+     border: none;
+     border-radius: 27px;
+     color: floralwhite;
+     
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #fff;
+    opacity: 1; /* Firefox */
+  }
+  
+  input:focus{
+      outline: none;
+  }
+
+  .contact_form button[type='submit']{
+      background-color: #fff;
+      border: 2px solid dodgerblue;
+      color: dodgerblue;
+      cursor: pointer;
+      padding: 10px 20px;
+      border-radius: 27px;
+  }
+
+
+  .contact_form button:focus{
+    outline: none;
+  }
+
+
+  .contact_body{
+      padding: 10px 20px;
+      overflow-y: scroll;
+      height: 180px;
+  }
+
+  .contact_item{
+      background-color: #fff;
+      padding: 10px 15px;
+      border-radius: 3px;
+      box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.2);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 10px;
+  }
+
+  .contact_item_info{
+      margin-left: 10px;
+  }
